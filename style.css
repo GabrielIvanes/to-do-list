@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+body {
+  width: 100%;
+  height: 100vh;
+  background: #1e293b;
+  display: grid;
+  overflow: hidden;
+  place-items: center;
+  font-family: "Poppins", sans-serif;
+}
+.main-wrapper {
+  width: 700px;
+  background-color: white;
+  min-height: 150px;
+  max-height: 750px;
+  /*overflow-y: scroll;*/
+}
+/*.main-wrapper::-webkit-scrollbar {
+  display: none;
+}*/
+.text-bar {
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  position: relative;
+}
+.text-bar input {
+  font-family: "Poppins";
+  width: 80%;
+  height: 30px;
+  padding-left: 40px;
+  border-radius: 5px;
+}
+.text-bar i {
+  position: relative;
+  left: 33px;
+  top: 0.7px;
+}
+.text-bar button {
+  cursor: pointer;
+  font-family: "Poppins";
+  border-radius: 6px;
+  background-color: #1e293b;
+  color: white;
+  height: 30px;
+}
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.navigation button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: "Poppins";
+}
+.toutes.focus,
+.en-cours.focus,
+.realisees.focus {
+  border-radius: 4px;
+  background-color: #1e293b;
+  color: white;
+}
+.navigation .clear {
+  margin-left: 40px;
+  border: Solid 1px black;
+  border-radius: 4px;
+}
+#barre {
+  margin-top: 10px;
+  height: 2px;
+  background-color: black;
+  width: 100%;
+}
+.task-text.checked {
+  text-decoration-line: line-through;
+}
+ul {
+  list-style-type: none;
+}
+ul li {
+  margin-right: 10px;
+  padding-top: 30px;
+}
+ul li:first-child {
+  padding-top: 0px;
+}
+li .ellipsis {
+  float: right;
+  padding-top: 5px;
+  cursor: pointer;
+}
+input[type="checkbox"] {
+  accent-color: #1e293b;
+  vertical-align: middle;
+}
+li span {
+  vertical-align: middle;
+  padding-bottom: 5px;
+}
+.menu li {
+  cursor: pointer;
+  height: fit-content;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu li i {
+  margin-right: 5px;
+}
+.menu {
+  position: relative;
+}
+.list-menu {
+  width: 100%;
+}
+.menu ul {
+  position: absolute;
+  padding: 5px;
+  right: 0px;
+  display: block;
+  border: solid 1px;
+  border-radius: 4px;
+  padding: 5px;
+  width: fit-content;
+  background-color: #fff;
+  transform: scale(0);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+}
+.menu ul.show {
+  transform: scale(1);
+}
+.menu li:hover {
+  background: #f5f5f5;
+}
